@@ -1,4 +1,5 @@
-HTML and CSS practice to copy the Google.com search results page as of 23/10/2018.
+HTML and CSS practice to copy the [Google.com search results page](https://www.google.com/search?q=build+this+webpage) as of 30/10/2018.
+
 
 By doing this project, I will have to:
 - Decide which HTML elements are needed
