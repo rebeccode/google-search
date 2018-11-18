@@ -1,0 +1,373 @@
+html, body {
+    font-family: arial,sans-serif;
+    font-size: 13px;
+}
+
+/* links */
+a {
+    display: inline-block;
+    color: #212121;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #181818;
+    text-decoration: underline;
+}
+
+.ad-feedback a {
+    color: #9E9E9E;
+    text-decoration: none;  
+}
+
+.ad-feedback a:hover {
+    color: #9E9E9E;  
+    text-decoration: underline;
+}
+
+.link {
+    color: #0C742D;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.link:hover {
+    color: #0C742D;
+    text-decoration: none
+}
+
+.search-result-link {
+    color: #3600AD;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.search-result-link:hover {
+    color: #3600AD;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+.small-search-result {
+    color: #3600AD;
+    text-decoration: none;   
+}
+
+.small-search-result:hover {
+    color: #3600AD;
+    text-decoration: underline;   
+}
+
+.more-link {
+    font-size: 14px;
+    color: #9E9E9E;
+}
+
+.more-link:hover {
+    color: #9E9E9E;
+    text-decoration: underline;
+}
+
+.drop-down-link {
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.drop-down-link:hover {
+    text-decoration: none;
+}
+
+.feedback a
+{
+    font-style: italic;
+    font-size: 11px;
+    color: #777;
+}
+
+.feedback a:hover
+{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.related-link a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #3600AD;
+}
+
+.related-link a:hover {
+    text-decoration: none;
+}
+
+.bottom-nav,.top-nav-links a {
+    font-size: 13px;
+    color: #5f6368;
+    text-decoration: none;
+}
+
+.bottom-nav,.top-nav-links a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+/* links end */
+
+/* text */
+
+em {
+    font-weight: bold;
+}
+
+.result-stats p {
+  color: #808080;
+  font-size: small;
+}
+
+.icon {
+  fill: #9E9E9E;
+  width: .8em;
+  height: .8em;
+}
+
+.search-icon {
+  fill: #417AF7;
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.lead-sentence {
+  font-weight: bold;
+}
+
+.main-ad {
+  font-size: 16px;
+}
+
+.list {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.top-nav-links {
+    font-size: 13px;
+}
+
+.people-also-ask-title {
+    font-size: 20px;
+    color: #808080
+}
+
+.bottom-ad p {
+    font-size: 14px;
+    color: #9E9E9E;
+}
+
+.bottom-ad h3 {
+    font-size: 16px;
+}
+
+.date {
+    color: #808080;
+}
+
+.description {
+    color: #545454;
+    word-wrap: break-word;
+}
+
+.related-searches-list h2 {
+    font-size: 18px;
+}
+
+.related-searches-list a {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.regular-font {
+    font-weight: normal;
+}
+
+/* icons */
+.icon-square {
+    width: 20px;
+    background-image: url(../images/iconList.png);
+    background-size: 528px 68px;
+    background-position: -132px -38px;
+    opacity: .60;
+    padding: 15px 5px;
+}
+
+.icon-square:hover {
+    opacity: .84;
+}
+
+.icon-alarm {
+    background: url('../images/iconList.png') no-repeat -279px -42px;
+    width: 23px;
+    height: 26px;
+    opacity: .60;
+}
+
+.icon-alarm:hover {
+    opacity: .84;
+}
+
+.user-image {
+    background: url('../images/user-photo.jpg') no-repeat;
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+}
+
+.mic-icon {
+   width: 1.5em;
+   height: 1.5em;
+}
+
+/* bottom google search numbers and logo */
+
+.google-bar a {
+    color: #4285f4;
+}
+
+.google-bar a:hover {
+    color: #4285f4;
+}
+
+.capital-g {
+    background: url('../images/nav_logo242.png') no-repeat -24px 0;
+    width: 28px;
+    height: 29px;
+}
+
+.icon-o-red {
+    background: url('../images/nav_logo242.png') no-repeat -54px -10px;
+    width: 18px;
+    height: 19px;
+}
+
+.icon-o-yellow {
+    background: url('../images/nav_logo242.png') no-repeat -75px -10px;
+    width: 18px;
+    height: 19px;
+}
+
+.lowercase-g {
+    background: url('../images/nav_logo242.png') no-repeat -96px -10px;
+    width: 19px;
+    height: 27px;
+}
+
+.lowercase-l {
+    background: url('../images/nav_logo242.png') no-repeat -117px -1px;
+    width: 4px;
+    height: 27px;
+}
+
+.lowercase-e {
+    background: url('../images/nav_logo242.png') no-repeat -122px -10px;
+    width: 18px;
+    height: 19px;
+}
+
+/* search box */
+
+.search-box {
+    font-size: 18px;
+    width: 428px;
+    border: 0;
+    height: 44px;
+    box-shadow: 1px 1px 2px #dbdbdb;
+    margin: 0 auto;
+    min-width: 350px;
+}
+
+/* realted sites */
+
+.wordpress-box {
+    background: url('../images/related-search/wordpress.png') no-repeat;
+    width: 72px;
+    height: 72px;
+}
+
+.google-box {
+    background: url('../images/related-search/google-sites.png') no-repeat -50px;
+    width: 72px;
+    height: 72px;
+}
+
+.mobirise-box {
+    background: url('../images/related-search/mobirise.jpeg') no-repeat;
+    width: 72px;
+    height: 72px;
+}
+
+.drupal-box {
+    background: url('../images/related-search/drupal.png') no-repeat;
+    width: 72px;
+    height: 72px;
+}
+
+.bootstrap-box {
+    background: url('../images/related-search/bootstrap.png') no-repeat;
+    width: 72px;
+    height: 72px;
+}
+
+.webnode-box {
+    background: url('../images/related-search/webnode.jpeg') no-repeat -70px;
+    width: 72px;
+    height: 72px;
+}
+
+/* footer */
+.country {
+    color: #6F6F6F;
+    font-size: 15px;
+}
+
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: .8em .7em;
+    border-radius: 0px;
+    font-size: 0.65em;
+    font-weight: bold;
+ 
+/* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%; 
+    margin-left: -60px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* Speech arrow mark */
+.tooltip .tooltiptext::after {
+   content: " ";
+    position: absolute;
+    bottom: 100%;  /* At the top of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
