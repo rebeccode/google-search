@@ -5,7 +5,7 @@ html, body {
 
 /* header */
 
-header {
+header, footer {
     background-color: #FAFAFA;
     display: flex;
     align-items: center;
@@ -30,7 +30,7 @@ header {
 
 .logo-box {
     flex: 1;
-    min-width: 120px;
+    max-width: 638px;
 }
 
 .search {
@@ -46,18 +46,19 @@ header {
 .top-nav-links-box {
     flex: 3;
     order: 2;
+    max-width: 638px;
 }
 
 .right-space {
     flex: 1;
     order: 3;
-    min-width: 150px;
+    width: 150px;
 }
 
 .left-space {
     flex: 1;
     order: 1;
-    min-width: 120px;
+    width: 120px;
 }
 
 /* top navigation links */
@@ -68,6 +69,7 @@ header {
     justify-content: flex-start;
     flex: 3;
     order: 2;
+    max-width: 638px;
 }
 
 .top-nav-links li {
@@ -101,6 +103,7 @@ header {
     flex: 3;
     order: 2;
     flex-wrap: wrap;
+    max-width: 638px;
 }
 
 /* links */
@@ -340,6 +343,10 @@ em {
 
 /* bottom google search numbers and logo */
 
+.google-bar {
+
+}
+
 .google-bar a {
     color: #4285f4;
 }
@@ -435,7 +442,27 @@ em {
 }
 
 /* footer */
+
+footer {
+    border: 1px solid #EBEBEB;
+}
+
+.bottom-nav {
+    flex: 3;
+    order: 2;
+    min-width: 638px;
+    padding: 2em;
+}
+
+.bottom-nav li {
+    padding-right: 2em;
+}
+
 .country {
     color: #6F6F6F;
     font-size: 15px;
+    order: 2;
+    flex: 3;
+    min-width: 638px;
+    padding: 1em;
 }
