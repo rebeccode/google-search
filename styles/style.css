@@ -344,11 +344,10 @@ em {
 /* bottom google search numbers and logo */
 
 .google-bar {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
+    display: relative;
     width: 300px;
-    padding: 40px 0px 40px 180px;
+    margin: 0 auto;
+    padding: 40px;
 }
 
 .google-bar a {
@@ -357,56 +356,6 @@ em {
 
 .google-bar a:hover {
     color: #4285f4;
-}
-
-.number {
-    padding: 30px 2px;
-}
-
-.next {
-    padding: 15px;
-}
-
-.capital-g {
-    background: url('../images/nav_logo242.png') no-repeat -24px 0;
-    width: 28px;
-    height: 29px;
-}
-
-.icon-o-red {
-    background: url('../images/nav_logo242.png') no-repeat -54px -10px;
-    width: 18px;
-    height: 19px;
-}
-
-.icon-o-yellow {
-    background: url('../images/nav_logo242.png') no-repeat -75px -10px;
-    width: 18px;
-    height: 19px;
-}
-
-.lowercase-g {
-    background: url('../images/nav_logo242.png') no-repeat -96px -10px;
-    width: 19px;
-    height: 27px;
-}
-
-.lowercase-l {
-    background: url('../images/nav_logo242.png') no-repeat -117px -1px;
-    width: 4px;
-    height: 27px;
-}
-
-.lowercase-e {
-    background: url('../images/nav_logo242.png') no-repeat -122px -10px;
-    width: 18px;
-    height: 19px;
-}
-
-.icon-next {
-    background: url('../images/nav_logo242.png') no-repeat -160px -9px;
-    width: 7px;
-    height: 12px;
 }
 
 /* search box */
