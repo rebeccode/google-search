@@ -344,7 +344,14 @@ em {
 /* bottom google search numbers and logo */
 
 .google-bar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 40px;
+}
 
+.google-bar li {
+    padding: 2px;
 }
 
 .google-bar a {
@@ -353,6 +360,10 @@ em {
 
 .google-bar a:hover {
     color: #4285f4;
+}
+
+.number {
+    padding: 30px 2px;
 }
 
 .capital-g {
@@ -389,6 +400,12 @@ em {
     background: url('../images/nav_logo242.png') no-repeat -122px -10px;
     width: 18px;
     height: 19px;
+}
+
+.icon-next {
+    background: url('../images/nav_logo242.png') no-repeat -160px -9px;
+    width: 7px;
+    height: 12px;
 }
 
 /* search box */
@@ -451,7 +468,7 @@ footer {
     flex: 3;
     order: 2;
     min-width: 638px;
-    padding: 2em;
+    padding: 1.2em;
 }
 
 .bottom-nav li {
