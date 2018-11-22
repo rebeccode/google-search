@@ -12,13 +12,12 @@ header {
     justify-content: flex-start;
 }
 
-.row-2-header{
+.row-2-header {
     border-bottom: 1px solid #EBEBEB;
 }
 
 .flex-container {
     display: flex;
-
 }
 
 .top-nav {
@@ -41,6 +40,7 @@ header {
 
 .top-nav-box {
     flex: 1;
+    min-width: 150px;
 }
 
 .top-nav-links-box {
@@ -48,12 +48,13 @@ header {
     order: 2;
 }
 
-.top-nav-right-space {
+.right-space {
     flex: 1;
     order: 3;
+    min-width: 150px;
 }
 
-.top-nav-left-space {
+.left-space {
     flex: 1;
     order: 1;
     min-width: 120px;
@@ -97,8 +98,8 @@ header {
 /* main page */
 
 .main {
-    padding-left: 145px;
-    width: 600px;
+    flex: 3;
+    order: 2;
     flex-wrap: wrap;
 }
 
