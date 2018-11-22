@@ -3,6 +3,105 @@ html, body {
     font-size: 13px;
 }
 
+/* header */
+
+header {
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.row-2-header{
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.flex-container {
+    display: flex;
+
+}
+
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* layout */
+
+.logo-box {
+    flex: 1;
+    min-width: 120px;
+}
+
+.search {
+    position: relative;
+    flex: 3;
+}
+
+.top-nav-box {
+    flex: 1;
+}
+
+.top-nav-links-box {
+    flex: 3;
+    order: 2;
+}
+
+.top-nav-right-space {
+    flex: 1;
+    order: 3;
+}
+
+.top-nav-left-space {
+    flex: 1;
+    order: 1;
+    min-width: 120px;
+}
+
+/* top navigation links */
+
+.top-nav-links-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 3;
+    order: 2;
+}
+
+.top-nav-links li {
+    margin: 7px 10px;
+}
+
+.top-nav-links-right {
+    justify-content: flex-end;
+}
+
+.settings a {
+    padding-left: 200px;
+}
+
+.tools {
+    padding: 6px 7px;
+    border: 1px solid transparent;
+    color: #212121;
+}
+
+.tools:hover {
+    border-radius: 2px;
+    border: 1px solid #9E9E9E;
+    background-color: #EBEBEB;
+    cursor: pointer;
+}
+
+/* main page */
+
+.main {
+    padding-left: 145px;
+    width: 600px;
+    flex-wrap: wrap;
+}
+
 /* links */
 a {
     display: inline-block;
@@ -111,8 +210,6 @@ a:hover {
     color: #000;
 }
 
-/* links end */
-
 /* text */
 
 em {
@@ -120,37 +217,22 @@ em {
 }
 
 .result-stats p {
-  color: #808080;
-  font-size: small;
-}
-
-.icon {
-  fill: #9E9E9E;
-  width: .8em;
-  height: .8em;
-}
-
-.search-icon {
-  fill: #417AF7;
-  width: 1.5em;
-  height: 1.5em;
+    color: #808080;
+    font-size: small;
+    padding: 10px;
 }
 
 .lead-sentence {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .main-ad {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .list {
-  list-style-type: decimal;
-  list-style-position: inside;
-}
-
-.top-nav-links {
-    font-size: 13px;
+    list-style-type: decimal;
+    list-style-position: inside;
 }
 
 .people-also-ask-title {
@@ -189,7 +271,8 @@ em {
     font-weight: normal;
 }
 
-/* icons */
+/* top nav icons */
+
 .icon-square {
     width: 20px;
     background-image: url(../images/iconList.png);
@@ -197,6 +280,8 @@ em {
     background-position: -132px -38px;
     opacity: .60;
     padding: 15px 5px;
+    flex: 1;
+    margin: 10px;
 }
 
 .icon-square:hover {
@@ -208,6 +293,8 @@ em {
     width: 23px;
     height: 26px;
     opacity: .60;
+    flex: 1;
+    margin: 10px;
 }
 
 .icon-alarm:hover {
@@ -219,12 +306,36 @@ em {
     width: 32px;
     height: 32px;
     border-radius: 20px;
+    flex: 1;
+    margin: 10px;
 }
 
+/* icons in search box */
+
 .mic-icon {
-   width: 1.5em;
-   height: 1.5em;
+    position: absolute;
+    top: 30px;
+    left: 550px;
+    width: 2em;
+    height: 2em;
 }
+
+.search-icon {
+    position: absolute;
+    top: 30px;
+    left: 590px;
+    fill: #417AF7;
+    width: 2em;
+    height: 2em;
+}
+
+/* feedback/about this result icons */
+.icon {
+    fill: #9E9E9E;
+    width: .8em;
+    height: .8em;
+}
+
 
 /* bottom google search numbers and logo */
 
@@ -276,11 +387,11 @@ em {
 
 .search-box {
     font-size: 18px;
-    width: 428px;
+    width: 636px;
     border: 0;
     height: 44px;
     box-shadow: 1px 1px 2px #dbdbdb;
-    margin: 0 auto;
+    margin: 20px auto;
     min-width: 350px;
 }
 
@@ -326,48 +437,4 @@ em {
 .country {
     color: #6F6F6F;
     font-size: 15px;
-}
-
-
-/* Tooltip container */
-.tooltip {
-    position: relative;
-    display: inline-block;
-    border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-    visibility: hidden;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: .8em .7em;
-    border-radius: 0px;
-    font-size: 0.65em;
-    font-weight: bold;
- 
-/* Position the tooltip text */
-    position: absolute;
-    z-index: 1;
-    top: 100%;
-    left: 50%; 
-    margin-left: -60px;
-}
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-}
-
-/* Speech arrow mark */
-.tooltip .tooltiptext::after {
-   content: " ";
-    position: absolute;
-    bottom: 100%;  /* At the top of the tooltip */
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: transparent transparent black transparent;
 }
