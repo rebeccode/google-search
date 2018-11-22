@@ -345,13 +345,10 @@ em {
 
 .google-bar {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-end;
-    padding: 40px;
-}
-
-.google-bar li {
-    padding: 2px;
+    width: 300px;
+    padding: 40px 0px 40px 180px;
 }
 
 .google-bar a {
@@ -364,6 +361,10 @@ em {
 
 .number {
     padding: 30px 2px;
+}
+
+.next {
+    padding: 15px;
 }
 
 .capital-g {
