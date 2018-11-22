@@ -9,7 +9,6 @@ header, footer {
     background-color: #FAFAFA;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 }
 
 .row-2-header {
@@ -20,45 +19,42 @@ header, footer {
     display: flex;
 }
 
-.top-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
 /* layout */
-
-.logo-box {
-    flex: 1;
-    max-width: 638px;
-}
 
 .search {
     position: relative;
+    min-width: 755px;
+}
+
+.top-box {
     flex: 3;
 }
 
 .top-nav-box {
     flex: 1;
     min-width: 150px;
+    max-width: 200px;
+    padding: 15px;
 }
 
 .top-nav-links-box {
     flex: 3;
     order: 2;
-    max-width: 638px;
+    max-width: 630px;
 }
 
 .right-space {
     flex: 1;
     order: 3;
-    width: 150px;
+    max-width: 175px;
+    min-width: 175px;
 }
 
 .left-space {
     flex: 1;
     order: 1;
-    width: 120px;
+    max-width: 120px;
+    min-width: 120px;
 }
 
 /* top navigation links */
@@ -102,8 +98,8 @@ header, footer {
 .main {
     flex: 3;
     order: 2;
-    flex-wrap: wrap;
     max-width: 638px;
+    min-width: 630px;
 }
 
 /* links */
@@ -143,6 +139,7 @@ a:hover {
     color: #3600AD;
     text-decoration: none;
     font-size: 18px;
+    text-transform: capitalize;
 }
 
 .search-result-link:hover {
@@ -174,10 +171,15 @@ a:hover {
 .drop-down-link {
     font-size: 18px;
     text-decoration: none;
+    padding: 2px 10px;
 }
 
 .drop-down-link:hover {
     text-decoration: none;
+}
+
+.feedback {
+    justify-content: flex-end;
 }
 
 .feedback a
@@ -223,7 +225,7 @@ em {
 .result-stats p {
     color: #808080;
     font-size: small;
-    padding: 10px;
+    padding: 15px;
 }
 
 .lead-sentence {
@@ -232,6 +234,27 @@ em {
 
 .main-ad {
     font-size: 16px;
+    padding: 10px;
+    margin: 10px 0px 0px 0px;
+    border: 1px solid #DFDFDF;
+    box-shadow: 0 1px #F3F3F3;
+    border-radius: 4px;
+}
+
+.main-ad img {
+    float: right;
+}
+
+.main-ad p, li, a {
+    margin: 2px;
+}
+
+.more-link {
+    padding: 10px 10px 10px 20px;
+}
+
+.lead-sentence {
+    text-transform: uppercase;
 }
 
 .list {
@@ -241,7 +264,54 @@ em {
 
 .people-also-ask-title {
     font-size: 20px;
-    color: #808080
+    color: #808080;
+    margin: 15px 0 10px 20px;
+}
+
+.people-also-ask {
+    position: relative;
+    border: 1px solid #DFDFDF;
+    box-shadow: 0 2px #F3F3F3;
+    border-radius: 4px;
+    margin: 20px 0 0 0 ;
+}
+
+.drop-down-arrow {
+    float: right;
+}
+
+.people-also-ask-drop-down {
+    border-top: 1px solid #DFDFDF;
+    margin: 5px;
+}
+
+.people-also-ask-drop-down img {
+    padding-top: 5px;
+    padding-right: 15px;
+}
+
+.ad-feedback {
+    justify-content: flex-end;
+}
+
+.ad-feedback div {
+    padding: 5px;
+}
+
+.ad-feedback p {
+    margin: 2px;
+    padding: 10px 10px 10px 0;
+    font-style: italic;
+    color: #9E9E9E;
+}
+
+.bottom-ad {
+    flex-direction: column;
+    padding: 10px;
+    margin: 15px 0 0 15px;
+    border: 1px solid #DFDFDF;
+    box-shadow: 0 1px #F3F3F3;
+    border-radius: 4px;
 }
 
 .bottom-ad p {
@@ -251,6 +321,21 @@ em {
 
 .bottom-ad h3 {
     font-size: 16px;
+    margin: 5px;
+}
+
+.bottom-ad-details {
+    justify-content: space-around;
+}
+
+.related-searches-list-box1 {
+    flex-direction: column;
+    flex: 1;
+}
+
+.related-searches-list-box2 {
+    flex-direction: column;
+    flex: 1;
 }
 
 .date {
@@ -262,8 +347,14 @@ em {
     word-wrap: break-word;
 }
 
-.related-searches-list h2 {
+h2 {
     font-size: 18px;
+    padding: 15px;
+}
+
+.related-searches-list {
+    justify-content: space-between;
+    padding: 15px 15px 0px;
 }
 
 .related-searches-list a {
@@ -341,17 +432,63 @@ em {
 }
 
 
+/* search results */
+
+.ad {
+    padding: 15px;
+}
+
+.ad-icon {
+    border: 1px solid #006621;
+    border-radius: 2px;
+    font-size: 0.9em;
+    padding: 2px 3px;
+}
+
+.ad-rank {
+   display: flex;
+   align-items: center;
+   color: #878080;
+}
+
+.ad-detail, .small-ad-detail {
+    color: #545454;
+    text-transform: capitalize;
+}
+
+.search-result {
+    padding: 15px;
+}
+
+.search-result a, p {
+    padding: 2px;
+}
+
+.two-column-ad {
+    justify-content: space-around;
+    padding: 10px 10px;
+}
+
+.two-column-ad div {
+    flex: 1;
+    min-width: 100px;
+    max-width: 200px;
+}
+
 /* bottom google search numbers and logo */
 
 .google-bar {
-    display: relative;
-    width: 300px;
-    margin: 0 auto;
-    padding: 40px;
+   padding: 50px 50px 50px 50px;
+   justify-content: center;
+}
+
+.google-bar-item {
+   width: 18px;
 }
 
 .google-bar a {
     color: #4285f4;
+    width: 13px;
 }
 
 .google-bar a:hover {
